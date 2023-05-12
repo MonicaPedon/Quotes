@@ -26,3 +26,111 @@ body {
     /*alinhar ao centro horizontalmente*/
 
 }
+
+.quote-container {
+    width: auto;
+    /*largura*/
+    max-width: 900px;
+    /*largura maxima*/
+    padding: 20px 30px;
+    /*espacamento primeiro top e buttom e segundo direita e esquerda*/
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    /*branco com transparencia o a significa a opacidade*/
+    box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.5);
+    /*sombra laterais, topo e buttom, blur e radios */
+}
+
+.quote-text {
+    font-size: 2.75rem;
+}
+
+
+.long-quote {
+    /*citação longa, vai diminuir a fonte*/
+    font-size: 2rem;
+}
+
+.fa-quote-left {
+    /*fonte awesome, icone de aspas*/
+    font-size: 4rem;
+}
+
+.quote-author {
+    margin-top: 15px;
+    /*espacamento do topo*/
+    font-size: 2rem;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.button-container {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    cursor: pointer;
+    font-size: 1.2rem;
+    height: 2.5rem;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    background-color: #333;
+    outline: none;
+    /*tira a borda azul do botao quando clicado*/
+    padding: 0.5rem 1.8rem;
+    box-shadow: 0 0.3rem rgba(121, 121, 121, 0.65);
+}
+
+button:hover {
+    /*quando passar o mouse*/
+    /* background-color: #82fb61; Aqui seria a opcao de alterar a cor do fundo do botao*/
+    filter: brightness(110%);
+    /*fica mais claro ao passar o mouse*/
+
+}
+
+button:active {
+    transform: translate(0, 0.3rem);
+    /*ao clicar botao vai descer*/
+    box-shadow: 0 0.1rem rgba(255, 255, 255, 0.65);
+}
+
+.twitter-button:hover {
+    color: #38a1f3;
+}
+
+.fa-twitter {
+    font-size: 1.5rem;
+}
+
+
+/* Media Query: Tablet or Smaller, coloco no final para sobrescrever o css anterior*/
+@media screen and (max-width: 1000px) {
+
+    /*se a tela for menor que 1000px*/
+    .quote-container {
+        margin: auto 10px;
+
+    }
+
+    .quote-text {
+        font-size: 2.25rem;
+    }
+
+    .fa-quote-left {
+        font-size: 3rem;
+    }
+
+    .quote-author {
+        font-size: 1.5rem;
+    }
+
+
+
+}
+
+
+/*rem auxilia na responsividade, e o tamanho relativo em comparacao com o elemento raiz, alguns navegadores tem tamanhos de fonte padrao de 16px, entao 16px pode ser uma fonte grande para celulares, 1rem = 16px, 2rem = 32px, 0.5rem = 8px, 0.25rem = 4px*/

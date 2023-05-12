@@ -12,6 +12,30 @@
 </head>
 
 <body>
+    <!-- div e uma tag de divisao, depois a classe para que serve para o css e o id para o js. div.quote-container#quote-container -->
+    <div class="quote-container" id="quote-container">
+        <!-- Quote element -->
+        <div class="quote-text">
+            <!-- i e uma tag de icones, i fas fa-quote-left -->
+            <i class="fas fa-quote-left"></i>
+            <!-- span e uma tag de texto, span id="quote" span#quote-->
+            <span id="quote">Any fool can write code that a computer can understand. Good programmers write code that
+                humans can understand.</span>
+            <!--  Author  -->
+            <div class="quote-author">
+                <span id="author">Martin Fowler</span>
+            </div>
+            <!--  Buttons -->
+            <div class="button-container">
+                <button class="twitter-button" id="twitter" title="Tweet This!">
+                    <!-- o title serve para quando passar o mouse em cima do botao aparecer uma mensagem -->
+                    <i class="fab fa-twitter"></i>
+                </button>
+
+                <button id="new-quote">New Quote</button>
+            </div>
+        </div>
+    </div>
 
 
     <script src="script.js">
